@@ -19,7 +19,7 @@ class KNearestNeighbor
 
   def classify(k = 3)
     DATA.each { |value, label| distances[distance(value)] = label }
-    top_neighbors = distances.keys.sort.first(3)
+    top_neighbors = distances.keys.sort.first(k)
     mode distances.fetch_values(*top_neighbors)
   end
 
