@@ -1,0 +1,337 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #f8f8f2;
+  background-color: #272822;
+}
+.highlight .err {
+  color: #151515;
+  background-color: #ac4142;
+}
+.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #505050;
+}
+.highlight .cp {
+  color: #f4bf75;
+}
+.highlight .nt {
+  color: #f4bf75;
+}
+.highlight .o, .highlight .ow {
+  color: #d0d0d0;
+}
+.highlight .p, .highlight .pi {
+  color: #d0d0d0;
+}
+.highlight .gi {
+  color: #90a959;
+}
+.highlight .gd {
+  color: #ac4142;
+}
+.highlight .gh {
+  color: #6a9fb5;
+  background-color: #151515;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #aa759f;
+}
+.highlight .kc {
+  color: #d28445;
+}
+.highlight .kt {
+  color: #d28445;
+}
+.highlight .kd {
+  color: #d28445;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #90a959;
+}
+.highlight .sr {
+  color: #75b5aa;
+}
+.highlight .si {
+  color: #8f5536;
+}
+.highlight .se {
+  color: #8f5536;
+}
+.highlight .nn {
+  color: #f4bf75;
+}
+.highlight .nc {
+  color: #f4bf75;
+}
+.highlight .no {
+  color: #f4bf75;
+}
+.highlight .na {
+  color: #6a9fb5;
+}
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+  color: #90a959;
+}
+.highlight .ss {
+  color: #90a959;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+
+    <!-- KaTeX Math Renderer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"></script>
+
+    <!-- <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+  </head>
+
+  <body class="index" data-languages="[&quot;ruby&quot;,&quot;python&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+      <img src="images/logo.png" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="ruby">ruby</a>
+              <a href="#" data-language-name="python">python</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <div id="toc">
+      </div>
+        <ul class="toc-footer">
+            <li><a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id="introduction">Introduction</h1>
+
+<p>Welcome to a single page listing of machine learning models.
+This is just a simple web page to list different models, how they can be used, what their equation looks like, and how to use them in various languages.</p>
+
+<p>We have language bindings in Ruby and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+
+<p>This example API documentation page was created with <a href="https://github.com/tripit/slate">Slate</a>.</p>
+
+<h1 id="classification">Classification</h1>
+
+<p>Machine learning is bulit on the concept of classifying data.
+Unfortinately, you can&rsquo;t just click, drag, and drop a business model into a machine learning model and get an ever so magical result that will make people want to buy or use your app more.
+The truth is: it requires blood, sweat, and tears.</p>
+
+<p>Machine learning is just a tool.
+Most of the time it can work on small to large datasets.
+The larger the dataset, the more accurate the classification.
+ML is all about the classification of the data.</p>
+
+<p>Example classification goals:</p>
+
+<ul>
+<li>What products should I recommend to a user?</li>
+<li>How do I specify the genres of a movie or a TV show?</li>
+<li>Given a picture of a dog, which breed is it?</li>
+<li>What is the speed limit for a road?</li>
+<li>If I take a picture of the sky, which area is it in?</li>
+</ul>
+
+<p>Machine learning is more about the <em>So You Think You Can Clasify</em> than a <em>Internet&rsquo;s Got Talent</em>.</p>
+
+<h2 id="pros-cons-and-works-with">Pros, Cons, and Works with</h2>
+
+<p>At the beginning of each section, there&rsquo;s a piece on what a certain model works best with.
+Pro and con are self explanatory, but works with&rsquo;s vlues are not.
+Numerical is just a number that you can plug into a model, whereas nominal could be words.</p>
+
+<p><strong>Nom·i·nal</strong> /ˈnämən(ə)l/</p>
+
+<p><em>adjective</em></p>
+
+<ol>
+<li><p>(of a role or status) existing in name only. <br/>
+&ldquo;Thailand retained nominal independence under Japanese military occupation&rdquo; <br/>
+synonyms: in name only, titular, formal, official</p></li>
+<li><p>(of a price or amount of money) very small; far below the real value or cost. <br/>
+&ldquo;some firms charge only a nominal fee for the service&rdquo; <br/>
+synonyms: token, symbolic</p></li>
+</ol>
+
+<p><strong>nu·mer·i·cal</strong> /&lsquo;n(y)o͞oˈmerək(ə)l/</p>
+
+<p><em>adjective</em></p>
+
+<ol>
+<li>of, relating to, or expressed as a number or numbers. <br>
+&ldquo;the lists are in numerical order&rdquo;</li>
+</ol>
+
+          <h1 id="k-nearest-neighbor">k-Nearest Neighbor</h1>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">KNearestNeighbor</span>
+  <span class="nc">DATA</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">[</span><span class="mi">1</span><span class="o">.</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="o">.</span><span class="mi">0</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="s1">'A'</span><span class="p">,</span>
+    <span class="p">[</span><span class="mi">1</span><span class="o">.</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="o">.</span><span class="mi">1</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="s1">'A'</span><span class="p">,</span>
+    <span class="p">[</span><span class="mi">0</span><span class="o">.</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="o">.</span><span class="mi">0</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="s1">'B'</span><span class="p">,</span>
+    <span class="p">[</span><span class="mi">0</span><span class="o">.</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="o">.</span><span class="mi">1</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="s1">'B'</span>
+  <span class="p">}.</span><span class="nf">freeze</span>
+
+  <span class="kp">attr_reader</span> <span class="ss">:point</span>
+  <span class="kp">attr_accessor</span> <span class="ss">:distances</span>
+
+  <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+    <span class="vi">@distances</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="vi">@point</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">]</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">classify</span><span class="p">(</span><span class="n">k</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="no">DATA</span><span class="p">.</span><span class="nf">each</span> <span class="p">{</span> <span class="o">|</span><span class="n">value</span><span class="p">,</span> <span class="n">label</span><span class="o">|</span> <span class="n">distances</span><span class="p">[</span><span class="n">distance</span><span class="p">(</span><span class="n">value</span><span class="p">)]</span> <span class="o">=</span> <span class="n">label</span> <span class="p">}</span>
+    <span class="n">top_neighbors</span> <span class="o">=</span> <span class="n">distances</span><span class="p">.</span><span class="nf">keys</span><span class="p">.</span><span class="nf">sort</span><span class="p">.</span><span class="nf">first</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
+    <span class="n">mode</span> <span class="n">distances</span><span class="p">.</span><span class="nf">fetch_values</span><span class="p">(</span><span class="o">*</span><span class="n">top_neighbors</span><span class="p">)</span>
+  <span class="k">end</span>
+
+  <span class="kp">private</span>
+
+  <span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="n">distance_x</span> <span class="o">=</span> <span class="n">value</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">point</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">distance_y</span> <span class="o">=</span> <span class="n">value</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">point</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="p">(</span><span class="n">distance_x</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">distance_y</span> <span class="o">**</span> <span class="mi">2</span> <span class="p">)</span> <span class="o">**</span> <span class="mi">0</span><span class="o">.</span><span class="mi">5</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">mode</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+    <span class="n">counter</span> <span class="o">=</span> <span class="no">Hash</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">values</span><span class="p">.</span><span class="nf">each</span> <span class="p">{</span> <span class="o">|</span><span class="n">label</span><span class="o">|</span> <span class="n">counter</span><span class="p">[</span><span class="n">label</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span> <span class="p">}</span>
+    <span class="n">counter</span><span class="p">.</span><span class="nf">max</span> <span class="p">{</span> <span class="o">|</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">|</span> <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;=&gt;</span> <span class="n">b</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">}.</span><span class="nf">first</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="no">KNearestNeighbor</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="mi">0</span><span class="o">.</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="o">.</span><span class="mi">2</span><span class="p">).</span><span class="nf">classify</span>
+<span class="c1"># =&gt; 'B'</span>
+</code></pre>
+<pre class="highlight python"><code><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">operator</span>
+
+<span class="n">GROUP</span> <span class="o">=</span> <span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">],</span>
+              <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">])</span>
+
+<span class="n">LABELS</span> <span class="o">=</span> <span class="p">[</span><span class="s">'A'</span><span class="p">,</span> <span class="s">'A'</span><span class="p">,</span> <span class="s">'B'</span><span class="p">,</span> <span class="s">'B'</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">classify</span><span class="p">(</span><span class="n">inX</span><span class="p">,</span> <span class="n">dataSet</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
+  <span class="n">dataSetSize</span> <span class="o">=</span> <span class="n">dataSet</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+  <span class="n">diffMat</span> <span class="o">=</span> <span class="n">tile</span><span class="p">(</span><span class="n">inX</span><span class="p">,</span> <span class="p">(</span><span class="n">dataSetSize</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> <span class="o">-</span> <span class="n">dataSet</span>
+  <span class="n">sqDiffMat</span> <span class="o">=</span> <span class="n">diffMat</span> <span class="o">**</span> <span class="mi">2</span>
+  <span class="n">sqDistances</span> <span class="o">=</span> <span class="n">sqDiffMat</span><span class="o">.</span><span class="nb">sum</span><span class="p">(</span><span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+  <span class="n">distances</span> <span class="o">=</span> <span class="n">sqDistances</span> <span class="o">**</span> <span class="mf">0.5</span>
+  <span class="n">sortedDisIndicies</span> <span class="o">=</span> <span class="n">distances</span><span class="o">.</span><span class="n">argsort</span><span class="p">()</span>
+  <span class="n">classCount</span><span class="o">=</span><span class="p">{}</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">):</span>
+    <span class="n">voteIlabel</span> <span class="o">=</span> <span class="n">labels</span><span class="p">[</span><span class="n">sortedDistIndicies</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span>
+    <span class="n">classCount</span><span class="p">[</span><span class="n">voteIlabel</span><span class="p">]</span> <span class="o">=</span> <span class="n">classCount</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">voiteIlabel</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+  <span class="n">sortedClassCount</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">classCount</span><span class="o">.</span><span class="n">iteritems</span><span class="p">(),</span> <span class="n">key</span> <span class="o">=</span> <span class="n">operator</span><span class="o">.</span><span class="n">itemgetter</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">reverse</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">sortedClassCount</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">classify</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">GROUP</span><span class="p">,</span> <span class="n">LABELS</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</code></pre>
+
+<p id="knn-equation" class="equation"></p>
+
+<script>
+  var element = document.getElementById('knn-equation');
+  katex.render("d = \\sqrt{(xA_0 - xB_0)^2 + (xA_1 - xB_1)^2}", element);
+</script>
+
+<p><strong>Pros</strong>: high accuracy, insensitive to outliers, no assumptions about data.</p>
+
+<p><strong>Cons</strong>: computationally expensive, requires a lot of memory.</p>
+
+<p><strong>Works with</strong>: numeric values, nominal values.</p>
+
+<p>The kNN algorithm is one of the simpliest algorithms for marchine learning.
+Its primarily based off of Pythagoris&rsquo; Theorem where you want to find the closest &ldquo;neighbor&rdquo; to a given point.</p>
+
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Hertzsprung-Russel_StarData.png"
+     class="diagram"/></p>
+
+<p>The diagram to the left is called the <em>Hertzsprung-Russel Diagram</em> and is often used for <em>classifying</em> stars.
+Lets say we&rsquo;re given a star and we need to classify if its either a Super Giant, Giant, Sequence, or White Dwarf.
+The kNN agorithm is very effective in this.</p>
+
+<p>Its basically a 3 step process (as you can see in the ruby code for the method <code class="prettyprint">classify</code>):</p>
+
+<ol>
+<li><p><strong>Find the distance of your star to all the stars.</strong>
+This is where Pythagoris is used.
+We just iterate over each star in the dataset and find the distance.</p></li>
+<li><p><strong>Sort the distances and take the closest stars.</strong>
+After you&rsquo;ve sorted the distances, you&rsquo;re going to which stars are the closest neighbors.
+But, how do consider &ldquo;close&rdquo;?
+This is where the <em>k</em> comes in.
+You&rsquo;re simply going to take the closest k stars; 3 stars, 10 stars, 20 stars.</p></li>
+<li><p><strong>Find the mode of the closest stars.</strong>
+Once you have a list of all the closest stars, you&rsquo;re going to perform the mode operation.
+Remember Grade 6 when you were learning about mean, median, and mode?
+Just to jog your memory, mode was the item that appeared the most.
+Once you do that, you&rsquo;ve got your nearest neighbor &ldquo;class&rdquo; :)</p></li>
+</ol>
+
+<p>In the example to the right, we&rsquo;re given two clusters: Cluster A and Cluster B.
+Given the point of <code class="prettyprint">[0.0, 0.2]</code>, is it in the A Cluster or the B Cluster?</p>
+
+          <h1 id="decision-trees">Decision Trees</h1>
+
+<p><strong>Pros</strong>: computationally cheap to use, easy for us to understand learned results, missing values OK, can deal with irrelevant features.</p>
+
+<p><strong>Cons</strong>: prone to overfitting.</p>
+
+<p><strong>Works with</strong>: numeric values, nominal value.</p>
+
+          <h1 id="na-ve-bayes">naïve Bayes</h1>
+
+<p><strong>Pros</strong>: works with a small amount of data, handles multiple classes.</p>
+
+<p><strong>Cons</strong>: sensitive to how the input data is prepared.</p>
+
+<p><strong>Works with</strong>: nominal values.</p>
+
+          <h1 id="logistic-regression">Logistic Regression</h1>
+
+<p><strong>Pros</strong>: computationally inexpensive, easy to implement, knowledge representation easy to interpret.</p>
+
+<p><strong>Cons</strong>: prone to underfitting, may have low accuracy.</p>
+
+<p><strong>Works with</strong>: numeric values, nominal values.</p>
+
+          <h1 id="support-vector-machines">Support Vector Machines</h1>
+
+<p><strong>Pros</strong>: low generalization error, computationally inexpensive, easy to interpret results.</p>
+
+<p><strong>Cons</strong>: sensitive to tuning parameters and kernel choice; natively only handles binary classification.</p>
+
+<p>*<em>Works with</em>: numeric values, nominal values.</p>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="ruby">ruby</a>
+                <a href="#" data-language-name="python">python</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
